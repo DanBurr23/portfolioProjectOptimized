@@ -1,0 +1,174 @@
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+
+.name {
+  font-style: italic;
+  font-family: 'Armata', sans-serif;
+  font-size: 36px;
+  text-align: right;
+  background-color: yellow;
+}
+
+.title {
+	text-align: right;
+	font-style: italic;
+}
+
+.eclipse {
+	width: 150px;
+	height: 100px;
+}
+
+.mainImage {
+	width: 1140px;
+	height: 350px;
+}
+
+.projectImage {
+	padding: 10px;
+	margin: 5px;
+	display: flex;
+	width: 330px;
+	height: 200px;	
+}
+
+.imageBox {
+	border: 1px solid-blue;
+	border-box: 1px;
+	border-style: solid;
+}
+
+.projectDesc {
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid-blue;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+.projectLink {
+	padding: 10px;
+	margin: 5px;
+	border: 1px solid-blue;
+	border-width: 1px;
+	border-color: black;
+	border-style: solid;
+}
+
+.flex-box {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 10px;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  padding: 10px;
+}
+
+.center-content {
+  padding: 2.5% 5%;
+  color: white;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.biopic {
+  float: left;
+  padding: 10px;
+  width: 100px;
+  display: none;
+}
+
+img {
+  padding: 10px;
+}
+
+span {
+  padding: 5px;
+}
+
+#lets-connect {
+  text-align: center;
+}
+
+/* Media queries to handle various device widths */
+
+@media only screen and (max-width: 1024px) {
+  #lets-connect {
+    margin-top: 5%;
+  }
+}
+
+@media only screen and (max-width:900px) {
+  .biopic {
+    width: 175px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  #lets-connect {
+    margin-top: 10%;
+  }
+  .biopic {
+    width: 150px;
+  }
+  .welcome-message {
+    display: none;
+  }
+}
+
+#map {
+  display: block;
+  height: 100%;
+  margin: 0 5%;
+}
+
+#mapDiv {
+  height: 400px;
+  width: 100%;
+  padding-bottom: 5%;
+}
+
+@media only screen and (min-width: 750px) {
+  #skills-h3,
+  .biopic {
+    display: block;
+  }
+}
+
+
+/* The items below are for the tree for the roadmap */
+.node {
+    cursor: pointer;
+    background-image: url("../images/img0.jpg");
+  }
+
+  .node circle {
+    fill: #fff;
+    stroke: steelblue;
+    stroke-width: 3px;
+  }
+
+  .node text {
+    font: 12px sans-serif;
+  }
+
+  .link {
+    fill: none;
+    stroke: #ccc;
+    stroke-width: 2px;
+  }
